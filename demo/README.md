@@ -1,12 +1,14 @@
 # demo/
 
-## Installing the demo on fresh ec2 instance
+Installing the demo on fresh ec2 instance:
 ```
 sudo yum install git
 git clone https://github.com/mpaulweeks/fgc.git
-cd fgc && ./install/ec2.sh
+cd fgc
+git checkout deploy
+git pull
 unzip demo/local.zip -d local/
-git checkout deploy && git pull
+./install/ec2.sh
 ./shell/on_reload.sh
 sudo yum install nginx
 sudo cp install/nginx/nginx.conf /etc/nginx/nginx.conf

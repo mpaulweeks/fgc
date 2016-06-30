@@ -1,47 +1,17 @@
-# FightingGame.Communtiy
+# FightingGame.Community
 
-## links/resources
-* [datatables](http://datatables.net/)
-* [bootstrap-select](https://silviomoreto.github.io/bootstrap-select/)
-* [nginx custom error](http://nginxlibrary.com/403-forbidden-error/)
+[fightinggame.community](http://fightinggame.community)
 
-## installation on ec2
-* `sudo yum install git`
-* Clone git repo w/ password
-* `cd cfn && ./install/ec2.sh`
-* Fill `local/envar.json`
-* `python3 -m py.bin.task_download_cache`
-* generate CFN cookie
-* `./shell/on_reload.sh`
+See also: [fgc-status](https://github.com/mpaulweeks/fgc-status)
 
-## data/external assumptions
-* cfn player/match ids are unique
-* match ticks can be trusted
-* player names are unique
-* players will never be deleted
+## About
 
-## services
+This repository is not actively maintained, nor was it built with open-source in mind.
 
-### fgc-web
-* webserver: YES
-* cfn cookie: NO
-* db: READ
-* s3: READ
+I have provided it here for those who are curious and want to tinker with the CFN api.
 
-### fgc-api
-* webserver: YES
-* cfn cookie: YES
-* db: WRITE
-* s3: N/A
+I have hastily made some last minute docs to document how to get this running. [Setting up the demo](demo/README.md) is a great place to start.
 
-### fgc-scraper
-* webserver: NO
-* cfn cookie: YES
-* db: WRITE
-* s3: WRITE
+## License
 
-### fgc-demo
-* webserver: YES
-* cfn cookie: NO
-* db: N/A
-* s3: N/A
+MIT
