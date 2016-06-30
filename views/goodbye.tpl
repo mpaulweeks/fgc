@@ -10,7 +10,7 @@
 
 <div class="col-md-12">
     <h1> Goodbye </h1>
-    Last updated: June 26, 2016
+    Last updated: June 29, 2016
     <hr/>
 </div>
 <div class="col-md-2"></div>
