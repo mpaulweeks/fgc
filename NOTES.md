@@ -7,15 +7,6 @@ Misc notes I took during the development process.
 * [bootstrap-select](https://silviomoreto.github.io/bootstrap-select/)
 * [nginx custom error](http://nginxlibrary.com/403-forbidden-error/)
 
-## installation on ec2
-* `sudo yum install git`
-* Clone git repo w/ password
-* `cd cfn && ./install/ec2.sh`
-* Fill `local/envar.json`
-* `python3 -m py.bin.task_download_cache`
-* generate CFN cookie
-* `./shell/on_reload.sh`
-
 ## data/external assumptions
 * cfn player/match ids are unique
 * match ticks can be trusted
