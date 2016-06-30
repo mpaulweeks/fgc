@@ -127,7 +127,7 @@ class CFNLeagueCache():
         raise Exception('league_points < 0 not valid')
 
 
-CFNLeagueCache.declare(14000, 15999, 'Diamond')
+CFNLeagueCache.declare(14000, 19999, 'Diamond')  # unknown whats next
 CFNLeagueCache.declare(12000, 13999, 'Ultra Platinum')
 CFNLeagueCache.declare(10000, 11999, 'Super Platinum')
 CFNLeagueCache.declare(7500, 9999, 'Platinum')
