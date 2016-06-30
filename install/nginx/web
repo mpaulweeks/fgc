@@ -1,0 +1,37 @@
+# sudo service nginx restart
+
+server {
+  listen 80;
+  server_name sfv.fightinggame.community;
+
+  location / {
+    proxy_pass http://localhost:5555;
+  }
+
+  error_page 500 502 503 504 /custom_50x.html;
+  location = /custom_50x.html {
+    root /home/ec2-user/fgc/error;
+    internal;
+  }
+  proxy_intercept_errors on;
+
+  location /admin/test/500 {
+     return 500;
+  }
+}
+
+server {
+  listen 80;
+  server_name staging.fightinggame.community;
+
+  location / {
+    proxy_pass http://localhost:5555;
+  }
+}
+
+server {
+  listen 80 default_server;
+  listen 443 ssl default_server;
+
+  return 204;
+}

@@ -1,0 +1,16 @@
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * command to be executed
+
+*/5 * * * * cd ~/fgc && ./shell/pull_git_origin.sh
+
+## fgc-scraper
+10,40 * * * * cd ~/fgc && python3 -m py.bin.task_matches
+5 8 * * * cd ~/fgc && python3 -m py.bin.task_ranking
+
+# */5 * * * * cd ~/staging && python3 -m py.bin.backfill_aggregate

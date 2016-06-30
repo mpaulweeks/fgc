@@ -1,0 +1,105 @@
+.mobileShow { display: none;}
+.mobileHide { display: inline;}
+/* Smartphone Portrait and Landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+    .mobileShow { display: inline;}
+    .mobileHide { display: none;}
+}
+
+body {
+    background-color: #222222;
+    color: #DDDDDD;
+}
+input {
+    background-color: #DDDDDD;
+    color: #222222;
+}
+.paypal input {
+    background-color: inherit;
+}
+button.dark {
+    background-color: #222222;
+    color: #DDDDDD;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #DDDDDD;
+}
+button.dark:hover {
+    color: lightblue;
+    border-color: lightblue;
+}
+img.char_portrait {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #DDDDDD;
+    max-width: 100%;
+    height: auto;
+}
+.char_link {
+    width: 25%;
+    margin: -3px;
+}
+.char_link img {
+    width: inherit;
+}
+.table th {
+   text-align: center;
+}
+tbody tr:hover {
+    background-color: #DDDDDD;
+    color: #222222;
+}
+tbody a tr:hover {
+    background-color: #DDDDDD;
+    color: #222222;
+}
+.question {
+    text-decoration: underline;
+    font-weight: bold;
+}
+a {
+    color: #91d2fa;
+}
+tr a {
+    color: inherit;
+}
+a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+a:focus {
+    color: inherit;
+}
+table.dataTable.fixedHeader-floating {
+    background-color: #222222;
+}
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
+tr:last-child td {
+    border-bottom: 1px solid #ddd;
+}
+.navbar-default {
+    background-color: inherit;
+}
+.navbar-default .navbar-brand {
+    color: inherit;
+}
+.navbar-default .navbar-brand:hover {
+    color: lightblue;
+}
+.navbar-default .navbar-brand:focus {
+    color: inherit;
+}
+.navbar-default .navbar-nav>li>a {
+    color: inherit;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: lightblue;
+}
+.navbar-default .navbar-nav>li>a:focus {
+    color: inherit;
+}

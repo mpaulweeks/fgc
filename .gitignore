@@ -1,0 +1,14 @@
+# Trash
+.DS_Store
+*.pyc
+nohup.out
+
+# Temp
+temp
+
+# Local State/Security
+local
+
+# Demo
+demo/*.json
+demo/*.db
