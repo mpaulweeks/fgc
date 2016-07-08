@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    % include('_header.tpl', title='About')
+    % include('_header.tpl', title='About SFV.FGC')
 </head>
 <body>
 <div class="container text-center">

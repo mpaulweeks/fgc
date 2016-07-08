@@ -163,7 +163,6 @@ def _refresh_cache():
 @view('welcome')
 def index():
     return {
-        "title": "FightingGame.Community",
     }
 
 

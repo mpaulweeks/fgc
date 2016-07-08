@@ -10,21 +10,24 @@
 
 <div class="col-md-12">
     <h1> Goodbye </h1>
-    Last updated: June 30, 2016
+    Last updated: July 8, 2016
     <hr/>
 </div>
 <div class="col-md-2"></div>
 <div class="col-md-8 text-left">
     <p> FightingGame.Community was always a passion project. What originally started as a way for me and my friends to track our stats exploded into a public database that tracked 24k players, purely by word-of-mouth. </p>
 
-    <p> Unfortunately, for reasons both personal and financial, I can no longer maintain the site. <br/>
-    The site stopped pulling new data June 29, and I removed the majority of the users. <br/>
+    <p> Unfortunately, for many reasons, I will be shutting down the SFV stats/leaderboard. <br/>
+    The site stopped pulling new data June 29, and I have since removed the majority of the users. <br/>
     What currently remains is the matchup data, leaderboard, and stats for the top 500 players. </p>
 
     <p> Luckily, since this site was launched, alternatives have sprung up, such as <a href="http://v-league.pro/">v-league.pro</a> <br/>
     If you would like me to mention your site/app here, just <a href="/about"> contact me</a>. </p>
 
-    <p> I have made the source code public on <a href="https://github.com/mpaulweeks/fgc">my personal github</a>. </p>
+    <p> For those interested, I have made this site's source code available on <a href="https://github.com/mpaulweeks/fgc">my personal github</a>. </p>
+
+    <p> Also, just because this particular site is shutting down doesn't mean I'm done working! <br/>
+    You can check out all of my current FGC-related projects <a href="http://www.fightinggame.community/">here</a>.</p>
 
     <p> Special thanks go out to UltraDavid, Edward "RLBS" Hung, David Cosgrove, and MikeZ. </p>
 
