@@ -23,6 +23,22 @@ If you want to start poking around the CFN api, I suggest you start reading thes
 - [parsing CFN's objects](py/src/match/model/cfn.py)
 - [character IDs and other related info](py/src/cfn/cfn_constants.py)
 
+## FAQ
+
+__How do I get the cookie?__
+
+I used a manual process wherein I authenticated using the game client, while sniffing the traffic for time-sensitive login information, and then used those credentials to repeat the login request on my crawler server, thereby gaining a cookie that would work on that machine (the cookie's appear to track IP, so each server has to sign itself in).
+
+This is how I did it:
+
+1. Get the website code set up on a server.
+2. Launch SFV on a PC, use Fiddler or Wireshark (or equivalent program) to monitor HTTPS traffic, find the call that logs in your game client, copy out the "authcode" argument in the POST request body.
+3. Run the "register_cookie.sh" script on the server, when it prompts for authcode, paste the value you copied from above. You should get back a response that contains a cookie.
+4. Add that cookie to the "local/envar.json" of the server, eg: `"FGC_SCRAPER_COOKIE": "binf=289479238447;"`
+5. Use the server to periodically crawl the api and store the data for later reading in a database.
+
+If you ever want to make dynamic API requests from any device without setup (ie like a mobile app), you would need to first reverse-engineer how the SFV game client generates those "authcode" values. As mentioned above, the login cookies are IP-specific so you can't just login once and then pass it around.
+
 ## License
 
 MIT
