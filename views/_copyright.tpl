@@ -2,7 +2,7 @@
 <div class="small col-md-12 text-center">
     <hr/>
     <p>
-        <span>Copyright 2016 M. Paul Weeks</span>
+        <span>Copyright 2017 M. Paul Weeks</span>
         <br/>
         <a href="mailto:fightinggamedotcommunity@gmail.com">email</a> |
         <a href="https://twitter.com/fgc_status">twitter</a> |
