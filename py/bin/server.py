@@ -87,6 +87,22 @@ def enable_cors(fn):
     return _enable_cors
 
 
+def enable_open_cors(fn):
+    def _enable_cors(*args, **kwargs):
+        # set CORS headers
+        origin = request.get_header('Origin', default='')
+        response.headers['Access-Control-Allow-Origin'] = origin
+        response.headers['Access-Control-Allow-Methods'] = 'GET, OPTIONS'
+        response.headers['Access-Control-Allow-Headers'] = (
+            'Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token'
+        )
+
+        if request.method != 'OPTIONS':
+            # actual request; reply with the actual response
+            return fn(*args, **kwargs)
+    return _enable_cors
+
+
 def _kill_server():
     os._exit(0)
 
@@ -239,6 +255,13 @@ def leaderboard():
 @bottle_api.get('/admin/status/pid')
 def get_pid():
     return (str(PROCESS_ID))
+
+
+@bottle_web.route('/health', method=['OPTIONS', 'GET'])
+@bottle_api.route('/health', method=['OPTIONS', 'GET'])
+@enable_open_cors
+def health():
+    return "ok"
 
 
 @bottle_web.route('/admin/status/web', method=['OPTIONS', 'GET'])
