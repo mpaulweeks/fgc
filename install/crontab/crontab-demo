@@ -10,4 +10,4 @@
 */5 * * * * cd ~/fgc && ./shell/pull_git_origin.sh
 
 ## fgc-demo
-0,30 * * * * cd ~/fgc && ./shell/invalidate_cache.sh
+## none
