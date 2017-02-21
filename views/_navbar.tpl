@@ -25,7 +25,7 @@
 
 % if (not defined('is_goodbye')) or (not is_goodbye):
   <div class="col-md-12">
-  <p> SFV.FGC stopped updating on June 29. </p>
+  <p> SFV.FGC stopped updating on June 29, 2016. </p>
   <p> <a href="/goodbye">Thanks for everything!</a> </p>
   <hr/>
   </div>
