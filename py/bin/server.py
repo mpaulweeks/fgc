@@ -73,8 +73,8 @@ def enable_cors(fn):
     def _enable_cors(*args, **kwargs):
         # set CORS headers
         origin = request.get_header('Origin', default='')
-        if not origin.endswith('fightinggame.community'):
-            origin = 'http://fightinggame.community'
+        if not (origin.endswith('fgc.mpaulweeks.com')):
+            origin = 'http://fgc.mpaulweeks.com'
         response.headers['Access-Control-Allow-Origin'] = origin
         response.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS'
         response.headers['Access-Control-Allow-Headers'] = (

@@ -1,6 +1,6 @@
 # FightingGame.Community
 
-This is the source code for [fightinggame.community](http://fightinggame.community), which has suspended development.
+This is the source code for [fgc.mpaulweeks.com](http://fgc.mpaulweeks.com) (formally hosted at http://fightinggame.community), which has suspended development.
 
 The website provided statistics for Street Fighter V by crawling the Capcom Fighters Network (CFN) api.
 

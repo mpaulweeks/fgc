@@ -83,7 +83,7 @@ $(document).ready(function () {
             $('#new_player_name').prop("disabled", false);
             $('#submit_new_player').prop("disabled", false);
         }).fail(function (){
-            $('#message').html('There was an error. Please check <a href="http://status.fightinggame.community/">status.fightinggame.community</a> for more details.');
+            $('#message').html('There was an error. Please check <a href="http://status.fgc.mpaulweeks.com/">status.fgc.mpaulweeks.com</a> for more details.');
         });
     }
     $('#new_player_name').keypress(function (evt) {

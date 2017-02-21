@@ -2,8 +2,8 @@
 <nav class="navbar navbar-default navbar-static-top">
 
   <div class="container-fluid">
-    <a class="navbar-brand mobileHide" href="http://www.fightinggame.community/">FightingGame.Community</a>
-    <a class="navbar-brand mobileShow" href="http://www.fightinggame.community/">FG.C</a>
+    <a class="navbar-brand mobileHide" href="http://fgc.mpaulweeks.com/">FightingGame.Community</a>
+    <a class="navbar-brand mobileShow" href="http://fgc.mpaulweeks.com/">FG.C</a>
 
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
       <span class="sr-only">Toggle navigation</span>

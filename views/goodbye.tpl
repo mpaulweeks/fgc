@@ -27,7 +27,7 @@
     <p> For those interested, I have made this site's source code available on <a href="https://github.com/mpaulweeks/fgc">my personal github</a>. </p>
 
     <p> Also, just because this particular site is shutting down doesn't mean I'm done working! <br/>
-    You can check out all of my current FGC-related projects <a href="http://www.fightinggame.community/">here</a>.</p>
+    You can check out all of my current FGC-related projects <a href="http://fgc.mpaulweeks.com/">here</a>.</p>
 
     <p> Special thanks go out to UltraDavid, Edward "RLBS" Hung, David Cosgrove, and MikeZ. </p>
 
