@@ -7,7 +7,7 @@
 # |  |  |  |  |
 # *  *  *  *  * command to be executed
 
-*/5 * * * * cd ~/fgc && ./shell/pull_git_origin.sh
+*/5 * * * * cd ~/fgc && ./shell/pull_git_origin.sh > /dev/null
 
 ## fgc-demo
 ## none
